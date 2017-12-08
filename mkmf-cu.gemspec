@@ -9,6 +9,8 @@ Gem::Specification.new do |s|
   s.email       = ''
   s.files       = ["lib/mkmf-cu.rb", "lib/mkmf-cu/opt.rb", "LICENSE", "README.md"]
   s.homepage    = 'https://github.com/ruby-accel/mkmf-cu'
-  s.license       = 'MIT'
+  s.license     = 'MIT'
   s.executables << "mkmf-cu-nvcc"
+
+  s.add_development_dependency "rake", "~> 10.0"
 end
