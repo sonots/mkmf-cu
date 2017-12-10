@@ -115,7 +115,7 @@ def generate_linking_command_line(argv, opt_h)
       case op
       when "-o", "-c"
         s << " #{op} #{e}"
-        s << " " + argv[0] + " " if op == "-o"
+        s << " " + argv.join(" ") + " " if op == "-o"
       else
         s << " #{op}#{e}"
       end
